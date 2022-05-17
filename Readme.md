@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артур Ибрагимов](https://up.htmlacademy.ru/htmlcss/34/user/2101513).
-* Наставник: [Артур Литовко](https://htmlacademy.ru/profile/id6927].
+* Наставник: Артур Литовко - Frontend Developer (https://htmlacademy.ru/profile/id6927].
 
 ---
 
