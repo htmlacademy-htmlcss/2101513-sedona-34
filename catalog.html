@@ -38,10 +38,11 @@
         <li class="header-item">
           <a href="#" class="header-link">
             <span class="visually-hidden">Избранное</span>
+            <span class="favourite-icon">12</span>
           </a>
         </li>
         <li class="header-item">
-          <a href="#" class="header-link button">Хочу сюда!</a>
+          <button class="header-item-button" type="submit">Хочу сюда!</button>
         </li>
       </ul>
     </nav>
@@ -54,7 +55,7 @@
       <!-- Хэдэр Секции с Фльтрацией -->
       <header class="hotel-filter-header">
         <h1 class="hotel-filter-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs-list">
+        <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-links" href="index.html">
               <span class="visually-hidden">Главная</span>
@@ -63,7 +64,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-links">Гостиницы</a>
           </li>
-        </ul>
+        </ol>
       </header>
       <!-- Форма Фильтрации -->
       <form class="hotel-filter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -102,7 +103,7 @@
       <header class="filter-results-header">
         <h2 class="title">Найдено гостиниц: 38</h2>
         <!-- Сортировка Результатов Фильтрации -->
-        <select class="filter-results-select" aria-label="Сортировка">
+        <select class="filter-results-select" aria-label="Сортировка гостиниц">
           <option value="cheap" selected>Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
@@ -110,17 +111,17 @@
         <ul class="filter-results-view">
           <li class="results-item">
             <a href="#" class="view-links current-button">
-              <span>Показать плиткой</span>
+              <span>Показать результаты поиска плиткой</span>
             </a>
           </li>
           <li class="results-item">
             <a href="#" class="view-links button">
-              <span>Показать одним элементом</span>
+              <span>Показать результаты поиска по одному</span>
             </a>
           </li>
           <li class="results-item">
             <a href="#" class="view-links button">
-              <span>Показать списком</span>
+              <span>Показать результаты поиска списком</span>
             </a>
           </li>
         </ul>
@@ -131,12 +132,13 @@
         <ul class="results-cards">
           <!-- Карточка-результат -->
           <li class="card">
-            <h3 class="title">Amara Resort & Spa</h3>
+            <h3 class="title" lang="en">Amara Resort & Spa</h3>
             <p class="subtitle">Гостиница</p>
             <b class="subtitle">От 4000 ₽</b>
             <a class="card-links-detail button" href="#">Подробнее</a>
             <button class="button_favourite" type="button">В избранное</button>
             <p class="card-raiting">
+              <img src="#" alt="Звезда">
               <span class="visually-hidden">
                 Четырёхзвёздочная гостиница
               </span>
@@ -147,12 +149,13 @@
           </li>
           <!-- Карточка-результат -->
           <li class="card">
-            <h3 class="title">Villas at Poco Diablo</h3>
+            <h3 class="title" lang="en">Villas at Poco Diablo</h3>
             <p class="subtitle">Гостиница</p>
             <b class="subtitle">От 5000 ₽</b>
             <a class="card-links-detail button" href="#">Подробнее</a>
             <button class="button_favourite current" type="button">В избранное</button>
             <p class="card-raiting">
+              <img src="#" alt="Звезда">
               <span class="visually-hidden">
                 Четырёхзвёздочная гостиница
               </span>
@@ -163,12 +166,13 @@
           </li>
           <!-- Карточка-результат -->
           <li class="card">
-            <h3 class="title">Desert Quail Inn</h3>
+            <h3 class="title" lang="en">Desert Quail Inn</h3>
             <p class="subtitle">Гостиница</p>
             <b class="subtitle">От 2500 ₽</b>
             <a class="card-links-detail button" href="#">Подробнее</a>
             <button class="button_favourite" type="button">В избранное</button>
             <p class="card-raiting">
+              <img src="#" alt="Звезда">
               <span class="visually-hidden">
                 Четырёхзвёздочная гостиница
               </span>
@@ -179,12 +183,13 @@
           </li>
           <!-- Карточка-результат -->
           <li class="card">
-            <h3 class="title">GreenTree Inn</h3>
+            <h3 class="title" lang="en">GreenTree Inn</h3>
             <p class="subtitle">Гостиница</p>
             <b class="subtitle">От 1500 ₽</b>
             <a class="card-links-detail button" href="#">Подробнее</a>
             <button class="button_favourite" type="button">В избранное</button>
             <p class="card-raiting">
+              <img src="#" alt="Звезда">
               <span class="visually-hidden">
                 Четырёхзвёздочная гостиница
               </span>
@@ -233,8 +238,8 @@
     <p class="subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <p class="input-form">
-        <input type="email" name="email" id="follow" placeholder="Ваш e-mail" required>
-        <label for="follow">Подписаться</label>
+        <input type="email" name="email" id="follow" placeholder="Ваш e-mail" aria-label="Введите вашу электронную почту" required>
+        <button type="submit">Подписаться</button>
       </p>
     </form>
   </section>
@@ -245,17 +250,17 @@
     <ul class="footer-contacts-list">
      <li class="footer-contacts-item">
        <a href="https://vk.com/htmlacademy">
-         <span>Vkontakte</span>
+         <span lang="en">Vkontakte</span>
        </a>
      </li>
      <li class="footer-contacts-item">
        <a href="https://t.me/htmlacademy">
-         <span>Telegram</span>
+         <span lang="en">Telegram</span>
        </a>
       </li>
        <li class="footer-contacts-item">
        <a href="https://www.youtube.com/user/htmlacademyru">
-         <span>Youtube</span>
+         <span lang="en">Youtube</span>
        </a>
      </li>
    </ul>
