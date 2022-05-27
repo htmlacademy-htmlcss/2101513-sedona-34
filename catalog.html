@@ -13,7 +13,7 @@
   <header class="main-header">
     <!-- Логотип хэдэра -->
     <a href="index.html">
-      <img class="main-header-logo" src="#" alt="Логотип сайта Седона">
+      <img class="main-header-logo" src="images/icon/sedona-icon.png" alt="Логотип сайта Седона" width="139" height="70">
     </a>
     <nav class="header-navigation">
       <!-- Левая навигация хэдэра -->
@@ -33,12 +33,14 @@
         <li class="header-item">
           <a class="header-link" href="#">
             <span class="visually-hidden">Поиск</span>
+            <img src="images/icon/search-icon.svg" alt="Найти гостиницу">
           </a>
         </li>
         <li class="header-item">
           <a href="#" class="header-link">
             <span class="visually-hidden">Избранное</span>
             <span class="favourite-icon">12</span>
+            <img src="images/icon/favourite-icon.svg" alt="Добавить в избранное">
           </a>
         </li>
         <li class="header-item">
@@ -52,6 +54,7 @@
   <main class="main-hotel-page">
     <!-- Секция С Фильтрацией -->
     <section class="hotel-filter">
+      <img src="images/img/background-filter.jpg" alt="" width="1200" height="393">
       <!-- Хэдэр Секции с Фльтрацией -->
       <header class="hotel-filter-header">
         <h1 class="hotel-filter-header-title">Гостиницы Седоны</h1>
@@ -68,7 +71,7 @@
       </header>
       <!-- Форма Фильтрации -->
       <form class="hotel-filter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <!-- Левая Фильтр-->
+        <!-- Левый Фильтр-->
         <fieldset class="leftside-group">
           <legend class="leftside">Инфраструктура:</legend>
           <input type="checkbox" id="pool" name="Инфраструктура" checked>
@@ -88,11 +91,12 @@
           <input type="radio" id="apartaments" name="Жильё" value="Апартаменты">
           <label for="apartaments">Апартаменты</label>
         </fieldset>
-        <!-- Правая Фильтр -->
+        <!-- Правый Фильтр -->
         <fieldset class="rightside-group">
           <legend class="righside">Стоимость, ₽:</legend>
           <input type="range" min="0" max="9000" step="500">
         </fieldset>
+        <!-- Кнопки  -->
         <button type="submit">Применить</button>
         <button type="reset">Сбросить</button>
       </form>
@@ -133,15 +137,21 @@
           <!-- Карточка-результат -->
           <li class="card">
             <h3 class="title" lang="en">Amara Resort & Spa</h3>
+            <img src="images/img/results-card-first.jpg" alt="Отель Amara Resort & Spa" width="300" height="211">
             <p class="subtitle">Гостиница</p>
             <b class="subtitle">От 4000 ₽</b>
             <a class="card-links-detail button" href="#">Подробнее</a>
             <button class="button_favourite" type="button">В избранное</button>
             <p class="card-raiting">
-              <img src="#" alt="Звезда">
               <span class="visually-hidden">
                 Четырёхзвёздочная гостиница
               </span>
+              <span class="visual-raiting">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+                </span>
               <span class="raiting-text">
                 Рейтинг: 8,5
               </span>
@@ -150,15 +160,22 @@
           <!-- Карточка-результат -->
           <li class="card">
             <h3 class="title" lang="en">Villas at Poco Diablo</h3>
+            <img src="images/img/results-card-second.jpg" alt="Отель Villas at Poco Diablo" width="300" height="211">
             <p class="subtitle">Гостиница</p>
             <b class="subtitle">От 5000 ₽</b>
             <a class="card-links-detail button" href="#">Подробнее</a>
             <button class="button_favourite current" type="button">В избранное</button>
             <p class="card-raiting">
-              <img src="#" alt="Звезда">
+              <img src="#" alt="">
               <span class="visually-hidden">
                 Четырёхзвёздочная гостиница
               </span>
+              <span class="visual-raiting">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+                </span>
               <span class="raiting-text">
                 Рейтинг: 9,2
               </span>
@@ -167,14 +184,20 @@
           <!-- Карточка-результат -->
           <li class="card">
             <h3 class="title" lang="en">Desert Quail Inn</h3>
+            <img src="images/img/results-card-third.jpg" alt="Отель Desert Quail Inn" width="300" height="211">
             <p class="subtitle">Гостиница</p>
             <b class="subtitle">От 2500 ₽</b>
             <a class="card-links-detail button" href="#">Подробнее</a>
             <button class="button_favourite" type="button">В избранное</button>
             <p class="card-raiting">
-              <img src="#" alt="Звезда">
+              <img src="#" alt="">
               <span class="visually-hidden">
-                Четырёхзвёздочная гостиница
+                Трёхзвёздочная гостиница
+              </span>
+              <span class="visual-raiting">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
               </span>
               <span class="raiting-text">
                 Рейтинг: 6,9
@@ -184,14 +207,19 @@
           <!-- Карточка-результат -->
           <li class="card">
             <h3 class="title" lang="en">GreenTree Inn</h3>
+            <img src="images/img/results-card-fourth.jpg" alt="Отель GreenTree Inn" width="300" height="211">
             <p class="subtitle">Гостиница</p>
             <b class="subtitle">От 1500 ₽</b>
             <a class="card-links-detail button" href="#">Подробнее</a>
             <button class="button_favourite" type="button">В избранное</button>
             <p class="card-raiting">
-              <img src="#" alt="Звезда">
+              <img src="#" alt="">
               <span class="visually-hidden">
-                Четырёхзвёздочная гостиница
+                Двухзвёздочная гостиница
+              </span>
+              <span class="visual-raiting">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
               </span>
               <span class="raiting-text">
                 Рейтинг: 5,0
@@ -235,10 +263,11 @@
   <!-- Раздел С Подпиской На Рассылку -->
   <section class="mailing">
     <h2 class="title">Подпишитесь на рассылку</h2>
-    <p class="subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <p class="subtitle">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <p class="input-form">
-        <input type="email" name="email" id="follow" placeholder="Ваш e-mail" aria-label="Введите вашу электронную почту" required>
+        <span class="visually-hidden">Введите вашу электронную почту</span>
+        <input type="email" name="email" id="follow" placeholder="Ваш e-mail" required>
         <button type="submit">Подписаться</button>
       </p>
     </form>
@@ -251,16 +280,19 @@
      <li class="footer-contacts-item">
        <a href="https://vk.com/htmlacademy">
          <span lang="en">Vkontakte</span>
+         <img src="images/icon/vk-icon.svg" alt="Логотип vkontakte" width="24" height="14">
        </a>
      </li>
      <li class="footer-contacts-item">
        <a href="https://t.me/htmlacademy">
          <span lang="en">Telegram</span>
+         <img src="images/icon/telegram-icon.svg" alt="Логотип telegram" width="18" height="16">
        </a>
       </li>
        <li class="footer-contacts-item">
        <a href="https://www.youtube.com/user/htmlacademyru">
          <span lang="en">Youtube</span>
+         <img src="images/icon/youtube-icon.svg" alt="Логотип youtube" width="22" height="17" >
        </a>
      </li>
    </ul>
@@ -269,6 +301,7 @@
    </a>
    <a class="footer-contacts-logo" href="https://htmlacademy.ru/profile/id2101513">
      <span class="visually-hidden">Сайт разработчика</span>
+     <img src="images/icon/academy-icon.svg" alt="Логотип сайта htmlacademy"  >
    </a>
  </footer>  
 </body>
