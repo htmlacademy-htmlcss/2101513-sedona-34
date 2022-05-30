@@ -15,7 +15,7 @@
   font-weight: 700;
   font-display: swap;
 
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
 }
 
 @font-face {
@@ -33,7 +33,7 @@
   font-weight: 700;
   font-display: swap;
 
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
 }
 
 
