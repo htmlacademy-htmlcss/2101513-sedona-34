@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +8,16 @@
   <title>Каталог</title>
 </head>
 <body>
-
-  <!-- Хэдэр Страницы С Гостиницами -->
+  <!-- Хэдэр страницы -->
   <header class="main-header">
     <!-- Логотип хэдэра -->
     <a href="index.html">
-      <img class="main-header-logo" src="images/icon/sedona-icon.png" alt="Перейти на главную страницу сайта." width="139" height="70">
+      <img class="main-header-logo" src="images/icon/sedona-icon.png" alt="Перейти на главную страницу сайта."
+        width="139" height="70">
     </a>
+    <!-- Навигация -->
     <nav class="header-navigation">
-      <!-- Левая навигация хэдэра -->
+      <!-- Сайт -->
       <ul class="header-list">
         <li class="header-item">
           <a class="header-link" href="index.html">Главная</a>
@@ -29,7 +29,7 @@
           <a class="header-link current-header-link">Гостиницы</a>
         </li>
       </ul>
-      <!-- Правая навигация хэдэра-->
+      <!-- Пользователь-->
       <ul class="header-list user-menu">
         <li class="header-item">
           <a class="header-link" href="#">
@@ -43,7 +43,7 @@
           </a>
         </li>
         <li class="header-item">
-          <button class="header-item-button" type="submit">Хочу сюда!</button>
+          <button class="header-button-modal">Хочу сюда!</button>
         </li>
       </ul>
     </nav>
@@ -102,7 +102,7 @@
     <section class="filter-results-container">
       <!-- Хэдэр Результатов Фильтрации -->
       <header class="filter-results-header">
-        <h2 class="title">Найдено гостиниц: 38</h2>
+        <h2 class="filter-results-header-title">Найдено гостиниц: 38</h2>
         <!-- Сортировка Результатов Фильтрации -->
         <span class="visually-hidden">Меню сортировки гостиниц</span>
         <select class="filter-results-select">
@@ -134,17 +134,18 @@
         <ul class="results-cards">
           <!-- Карточка-результат -->
           <li class="card">
-            <h3 class="title" lang="en">Amara Resort & Spa</h3>
-            <img src="images/img/results-card-first.jpg" alt="Гостиница на фоне северного сияния." width="300" height="211">
-            <p class="subtitle">Гостиница</p>
-            <b class="subtitle">От 4000 ₽</b>
+            <h3 class="cards-title" lang="en">Amara Resort & Spa</h3>
+            <img src="images/img/results-card-first.jpg" alt="Гостиница на фоне северного сияния." width="300"
+              height="211">
+            <p class="cards-subtitle">Гостиница</p>
+            <b class="cards-subtitle">От 4000 ₽</b>
             <a class="card-link-detail" href="#">Подробнее</a>
             <button class="button-favourite" type="button">В избранное</button>
             <p class="card-raiting">
               <span class="visually-hidden">
                 Четырёхзвёздочная гостиница
               </span>
-                <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
+              <img src="images/icon/raiting-icon.svg" alt="" width="18" height="17">
               <span class="raiting-text">
                 Рейтинг: 8,5
               </span>
@@ -152,10 +153,11 @@
           </li>
           <!-- Карточка-результат -->
           <li class="card">
-            <h3 class="title" lang="en">Villas at Poco Diablo</h3>
-            <img src="images/img/results-card-second.jpg" alt="Гостиница на фоне величественного каньона." width="300" height="211">
-            <p class="subtitle">Гостиница</p>
-            <b class="subtitle">От 5000 ₽</b>
+            <h3 class="cards-title" lang="en">Villas at Poco Diablo</h3>
+            <img src="images/img/results-card-second.jpg" alt="Гостиница на фоне величественного каньона." width="300"
+              height="211">
+            <p class="cards-subtitle">Гостиница</p>
+            <b class="cards-subtitle">От 5000 ₽</b>
             <a class="card-link-detail" href="#">Подробнее</a>
             <button class="button-favourite current-button-favourite" type="button">В избранном</button>
             <p class="card-raiting">
@@ -169,10 +171,11 @@
           </li>
           <!-- Карточка-результат -->
           <li class="card">
-            <h3 class="title" lang="en">Desert Quail Inn</h3>
-            <img src="images/img/results-card-third.jpg" alt="Гостиница на фоне звёздного неба." width="300" height="211">
-            <p class="subtitle">Гостиница</p>
-            <b class="subtitle">От 2500 ₽</b>
+            <h3 class="cards-title" lang="en">Desert Quail Inn</h3>
+            <img src="images/img/results-card-third.jpg" alt="Гостиница на фоне звёздного неба." width="300"
+              height="211">
+            <p class="cards-subtitle">Гостиница</p>
+            <b class="cards-subtitle">От 2500 ₽</b>
             <a class="card-link-detail" href="#">Подробнее</a>
             <button class="button-favourite" type="button">В избранное</button>
             <p class="card-raiting">
@@ -186,10 +189,11 @@
           </li>
           <!-- Карточка-результат -->
           <li class="card">
-            <h3 class="title" lang="en">GreenTree Inn</h3>
-            <img src="images/img/results-card-fourth.jpg" alt="Гостиница на фоне скалистого пейзажа." width="300" height="211">
-            <p class="subtitle">Гостиница</p>
-            <b class="subtitle">От 1500 ₽</b>
+            <h3 class="cards-title" lang="en">GreenTree Inn</h3>
+            <img src="images/img/results-card-fourth.jpg" alt="Гостиница на фоне скалистого пейзажа." width="300"
+              height="211">
+            <p class="cards-subtitle">Гостиница</p>
+            <b class="cards-subtitle">От 1500 ₽</b>
             <a class="card-link-detail" href="#">Подробнее</a>
             <button class="button-favourite" type="button">В избранное</button>
             <p class="card-raiting">
@@ -205,7 +209,7 @@
       </div>
       <!-- Пагинация Результатов Фильтрации -->
       <section class="pagination-container">
-      <h3 class="visually-hidden">Навигация по страницам</h3>
+        <h3 class="visually-hidden">Навигация по страницам</h3>
         <ul class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-links current-pagination-link">1</a>
@@ -226,7 +230,7 @@
             <a class="pagination-links">10</a>
           </li>
         </ul>
-      <!-- Количество Отображаемых Гостиниц На Странице -->
+        <!-- Количество Отображаемых Гостиниц На Странице -->
         <label class="hotel-amount-label" for="amount">Гостиниц на странице:</label>
         <select class="hotel-amount" id="amount">
           <option value="4" selected>4</option>
@@ -236,9 +240,9 @@
   </main>
 
   <!-- Раздел С Подпиской На Рассылку -->
-  <section class="mailing">
-    <h2 class="title">Подпишитесь на рассылку</h2>
-    <p class="subtitle">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+  <section class="mailing-inner">
+    <h2 class="mailing-inner-title">Подпишитесь на рассылку</h2>
+    <p class="mailing-inner-subtitle">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <p class="input-form">
         <label for="follow" class="visually-hidden">Введите вашу электронную почту</label>
@@ -252,28 +256,30 @@
   <footer class="main-footer">
     <h2 class="visually-hidden">Контакты</h2>
     <ul class="footer-contacts-list">
-     <li class="footer-contacts-item">
-       <a href="https://vk.com/htmlacademy">
-         <span class="visually-hidden">Наша группа Вконтакте</span>
-       </a>
-     </li>
-     <li class="footer-contacts-item">
-       <a href="https://t.me/htmlacademy">
-         <span class="visually-hidden">Наша группа в Телеграм</span>
-       </a>
+      <li class="footer-contacts-item">
+        <a href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Наша группа Вконтакте</span>
+        </a>
       </li>
-       <li class="footer-contacts-item">
-       <a href="https://www.youtube.com/user/htmlacademyru">
-         <span class="visually-hidden">Наша страница на Ютьюб</span>
-       </a>
-     </li>
-   </ul>
-   <a class="footer-contacts-phone" href="tel:+78128121212">
-     <span class="visually-hidden">Номер телефона:</span> +7 (812) 812-12-12
-   </a>
-   <a class="footer-contacts-logo" href="https://htmlacademy.ru/profile/id2101513">
-     <img src="images/icon/footer-htmlacademy-icon.svg" alt="Разработчик этого сайта на htmlacademy" width="115" height="33">
-   </a>
- </footer>   
+      <li class="footer-contacts-item">
+        <a href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Наша группа в Телеграм</span>
+        </a>
+      </li>
+      <li class="footer-contacts-item">
+        <a href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Наша страница на Ютьюб</span>
+        </a>
+      </li>
+    </ul>
+    <a class="footer-contacts-phone" href="tel:+78128121212">
+      <span class="visually-hidden">Номер телефона:</span> +7 (812) 812-12-12
+    </a>
+    <a class="footer-contacts-logo" href="https://htmlacademy.ru/profile/id2101513">
+      <img src="images/icon/footer-htmlacademy-icon.svg" alt="Разработчик этого сайта на htmlacademy" width="115"
+        height="33">
+    </a>
+  </footer>
 </body>
+
 </html>
