@@ -6,7 +6,7 @@
   font-weight: 400;
   font-display: swap;
 
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-weight: 700;
   font-display: swap;
 
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
 @font-face {
@@ -24,7 +24,7 @@
   font-weight: 400;
   font-display: swap;
 
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -33,9 +33,10 @@
   font-weight: 700;
   font-display: swap;
 
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
+/* Defolt styles */
 
 /* Root */
 
@@ -67,7 +68,8 @@
 }
 
 
-/* Body */
+
+/* Common properties */
 
 body{
   font-family: "PT sans", sans-serif;
@@ -77,6 +79,15 @@ body{
   background-color: #fff;
 }
 
+button,
+input{
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
 
 
 /* Main Header */
@@ -110,27 +121,23 @@ body{
 .header-button-modal{
   font-size: 16px;
   font-weight: 700;
-  font-style: 20px;
+  line-height: 20px;
   text-transform: uppercase;
   color: var(--additional-text-color-white);
   background-color: var(--button-brown-defolt-color);
   border: none;
 }
 
-
-
 /* Hero image */
 
 .hero-wrapper{
   background: #000 url(../images/img/background-main.jpg) no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .hero-text-wrapper{
   text-align: center;
 }
-
-
 
 /* Main */
 
@@ -152,7 +159,6 @@ body{
 .main-subtitle{
   text-align: center;
 }
-
 
 /* Advantages Section */
 
@@ -197,8 +203,6 @@ body{
   background-color: var(--button-blue-defolt-color);
 }
 
-
-
 /* Modal Section */
 
 .hotel-modal-button{
@@ -219,14 +223,12 @@ body{
   text-align: center;
 }
 
-
-
 /* Mailing Section */
 /* Main Page */
 
 .mailing{
   background: #000 url(../images/img/background-mailing.jpg) no-repeat;
-  background-size: 100% auto;
+  background-size: cover;;
 }
 
 .mailing-title{
@@ -285,7 +287,7 @@ body{
 
 .hotel-filter{
   background: #000 url(../images/img/background-filter.jpg) no-repeat;
-  background-size: 100% auto;
+  background-size: cover;;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -455,4 +457,8 @@ body{
   text-decoration: none;
   text-align: center;
   color: var(--basic-text-color-black);
+}
+
+.footer-contacts-me{
+  font-style: normal;
 }
