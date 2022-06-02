@@ -3,7 +3,6 @@
 @font-face {
   font-family:"PT Sans";
   font-style: normal;
-  font-weight: 400;
   font-display: swap;
 
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -21,7 +20,6 @@
 @font-face {
   font-family:"PT Sans";
   font-style: italic;
-  font-weight: 400;
   font-display: swap;
 
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -84,6 +82,7 @@ input{
   font-family: inherit;
 }
 
+
 img {
   max-width: 100%;
   object-fit: contain;
@@ -95,7 +94,6 @@ img {
 .main-header{
   font-size: 20px;
   font-weight: 700;
-  line-height: 26px;
   background-color: #fff;
   color: var(--basic-text-color-black);
   text-transform: capitalize;
@@ -112,7 +110,6 @@ img {
 
 .favourite-icon{
   font-size: 10px;
-  font-weight: 400;
   line-height: 13px;
   color: var(--additional-text-color-white);
   background-color: var(--button-green-defolt-color);
@@ -147,11 +144,6 @@ img {
   line-height: 36px;
 }
 
-.subtitle{
-  font-size: 22px;
-  line-height: 26px;
-}
-
 .main-title{
   text-align: center;
 }
@@ -177,7 +169,6 @@ img {
 
 .advantages-item-subtitle{
   font-size: 18px;
-  font-weight: 400;
   line-height: 21px;
   text-align: center;
   color: var(--additional-text-color-charcoal);
@@ -241,9 +232,6 @@ img {
 }
 
 .mailing-subtitle{
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 26px;
   color: var(--additional-text-color-white);
   text-align: center;
 }
@@ -274,9 +262,6 @@ img {
 }
 
 .mailing-inner-subtitle{
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
   text-align: center;
   color: var(--additional-text-color-charcoal);
 }
@@ -290,7 +275,6 @@ img {
   background-size: cover;;
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
   color: var(--additional-text-color-white);
 }
 
@@ -306,7 +290,6 @@ img {
 
 .breadcrumbs-links{
   font-size: 16px;
-  font-weight: 400;
   line-height: 21px;
   text-decoration: none;
 }
@@ -314,8 +297,7 @@ img {
 .leftside, .rightside{
   font-size: 20px;
   font-weight: 700;
-  line-height: 26px;
-  text-transform: capitaliz e;
+  text-transform: capitalize;
 }
 
 /* Catalog Filter Buttons */
@@ -332,7 +314,6 @@ img {
 
 .filter-reset{
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   color: var(--additional-text-color-white);
 }
@@ -348,7 +329,7 @@ img {
 
 .filter-results-select{
   font-size: 18px;
-  font-weight: 400;
+  font-family: inherit;
   line-height: 21px;
   color: var(--additional-text-color-charcoal);
 }
@@ -367,7 +348,6 @@ img {
 
 .cards-subtitle{
   font-size: 18px;
-  font-weight: 400;
   line-height: 21px;
   color: var(--additional-text-color-charcoal);
 }
@@ -404,7 +384,6 @@ img {
 
 .raiting-text{
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   color: var(--additional-text-color-charcoal);
@@ -433,7 +412,6 @@ img {
 
 .hotel-amount, .hotel-amount-label{
   font-size: 18px;
-  font-weight: 400;
   line-height: 21px;
   color: var(--additional-text-color-charcoal);
 }
@@ -452,7 +430,6 @@ img {
 
 .footer-contacts-phone{
   font-size: 40px;
-  font-weight: 400;
   line-height: 40px;
   text-decoration: none;
   text-align: center;
