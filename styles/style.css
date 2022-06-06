@@ -155,6 +155,17 @@ img {
   align-items: center;
 }
 
+.user-menu-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.user-menu-item:last-of-type{
+  margin-right: 70px;
+}
+
 .header-item{
   margin: 20px 0 20px 0;
 }
@@ -164,27 +175,44 @@ img {
   color: var(--basic-text-color-black);
 }
 
-.search-link{
-  margin: 0 24px 0 12px;
+.search{
+  width: 42px;
 }
 
 .search-link::before{
-  content: url("../images/icon/header-search-icon.svg");
+  content:"";
+  width: 18px;
+  height: 18px;
+  display: block;
+  background-image: url("../images/icon/header-search-icon.svg");
+  background-repeat: no-repeat;
 }
 
-.favourite-link{
+.favoutire{
+  width: 42px;
   margin-right: 32px;
+  position: relative;
 }
 
 .favourite-link::before{
-  content: url("../images/icon/header-favourite-icon.svg");
+  content:"";
+  width: 18px;
+  height: 18px;
+  display: block;
+  background-image: url("../images/icon/header-favourite-icon.svg");
+  background-repeat: no-repeat;
 }
 
 .favourite-icon{
   font-size: 10px;
   line-height: 13px;
+  padding: 5px 6px;
+  border-radius: 50%;
   color: var(--additional-text-color-white);
   background-color: var(--button-green-defolt-color);
+  position: absolute;
+  top: 16px;
+  left: 24px;
 }
 
 .header-button-modal{
