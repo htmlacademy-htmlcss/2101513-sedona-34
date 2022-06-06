@@ -209,6 +209,12 @@ img {
   padding: 51px 0 83px 0;
 }
 
+.hero-wrapper::after{
+  content: url("../images/icon/main-background-divider-icon.svg");
+  position: relative;
+  top: 88px;
+}
+
 .hero-text{
   display: block;
   margin: 0 auto;
