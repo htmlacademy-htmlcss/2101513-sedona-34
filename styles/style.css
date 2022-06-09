@@ -123,7 +123,7 @@ img {
   color: var(--basic-text-color-black);
   text-transform: capitalize;
   width: 1200px;
-  height: 65px;
+  min-height: 65px;
   display: flex;
 }
 
@@ -146,12 +146,15 @@ img {
 .header-list{
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 17px;
   min-width: 390px;
   display: flex;
-  gap: 34px;
   align-items: center;
-  padding-left: 17px;
+  flex-wrap: wrap;
+}
+
+.header-item{
+  margin-right: 34px;
 }
 
 .user-menu{
@@ -163,30 +166,26 @@ img {
   margin-left: auto;
   margin-right: 70px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .user-menu-item{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-}
-
-.user-menu-item:last-of-type{
-  margin-right: 70px;
-}
-
-.header-item{
-  margin: 20px 0 20px 0;
 }
 
 .header-link{
   text-decoration: none;
   color: var(--basic-text-color-black);
+  display: block;
+  padding: 20px 0 20px 0;
 }
 
 .search{
-  width: 42px;
+  min-width: 42px;
+}
+
+.search-link{
+  padding: 24px 12px;
 }
 
 .search-link::before{
@@ -199,9 +198,13 @@ img {
 }
 
 .favoutire{
-  width: 42px;
-  margin-right: 32px;
+  min-width: 42px;
+  margin-right: 20px;
   position: relative;
+}
+
+.favourite-link{
+  padding: 24px 12px;
 }
 
 .favourite-link::before{
@@ -266,17 +269,16 @@ img {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  gap: 31px;
+  padding: 63px 0 90px 0;
 }
 
 .main-title{
   margin: 0;
-  margin-top: 63px;
+  margin-bottom: 31px;
 }
 
 .main-subtitle{
   margin: 0;
-  margin-bottom: 90px;
 }
 
 /* Main */
@@ -347,6 +349,7 @@ img {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
 .panorama-text-layout{
@@ -361,6 +364,7 @@ img {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
 .advantages-item-text-layout{
@@ -414,7 +418,7 @@ img {
 
 .advantages-list-wrapper{
   display: flex;
-
+  flex-wrap: wrap;
 }
 
 /* Modal Section Decoration, Layout */
@@ -424,7 +428,8 @@ img {
   min-height: 417px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  align-items: center;
+  padding: 91px 0 93px 0;
 }
 
 .hotel-modal-button{
@@ -439,7 +444,6 @@ img {
 }
 
 .modal-title{
-  text-align: center;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
@@ -453,7 +457,6 @@ img {
 }
 
 .hotel-modal-button{
-  align-self: center;
   width: 574px;
   padding: 12px 15px;
 }
@@ -472,6 +475,7 @@ img {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  padding: 50px 0 50px 0;
 }
 
 .mailing-title{
@@ -534,6 +538,7 @@ img {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  padding: 50px;
 }
 
 .mailing-inner-title{
@@ -961,14 +966,20 @@ img {
 .footer-contacts-item{
   display: flex;
   align-items: center;
-  margin: 5px 0;
-  width: 47px;
+  justify-content: center;
+  min-width: 47px;
 }
 
 .footer-contacts-links{
   text-decoration: none;
   color: var(--basic-text-color-black);
+  display: block;
+  padding: 18px 12px;
+}
 
+.telegram-link{
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .vk-link::before{
@@ -1007,6 +1018,7 @@ img {
 
 .footer-contacts-phone{
   font-size: 40px;
+  min-width: 332px;
   line-height: 40px;
   text-decoration: none;
   padding: 5px 0;
