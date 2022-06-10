@@ -714,6 +714,10 @@ img {
 
 .filter-results-header-title{
   text-transform: uppercase;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
   margin: 0;
   margin-right: 191px;
 }
@@ -724,7 +728,8 @@ img {
   line-height: 21px;
   color: var(--additional-text-color-charcoal);
   width: 290px;
-  padding: 14px 0 14px 20px;
+  height: 49px;
+  padding: 12px 0 12px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
@@ -738,26 +743,42 @@ img {
   gap: 8px;
 }
 
-.view-links{
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
+.results-item{
   display: flex;
-  width: 48px;
-  height: 48px;
   align-items: center;
   justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.view-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 12px;
 }
 
 .view-links-plate::before{
-  content: url("../images/icon/results-filter-all-icon.svg");
+  content: "";
+  background: url("../images/icon/results-filter-all-icon.svg") no-repeat;
+  width: 20px;
+  height: 20px;
 }
 
 .view-links-one::before{
-  content: url("../images/icon/results-filter-onebyone-icon.svg");
+  content: "";
+  background: url("../images/icon/results-filter-onebyone-icon.svg") no-repeat;
+  width: 20px;
+  height: 20px;
 }
 
 .view-links-list::before{
-  content: url("../images/icon/results-filter-list-icon.svg");
+  content: "";
+  background: url("../images/icon/results-filter-list-icon.svg") no-repeat;
+  width: 20px;
+  height: 20px;
 }
 
 /* Result Cards */
@@ -889,35 +910,38 @@ img {
   padding: 0;
   display: flex;
   gap: 8px;
-  width: 400px;
+  min-width: 400px;
   margin-right: 270px;
 }
 
-.pagination-links{
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-  text-decoration: none;
-  color: var(--additional-text-color-white);
-  background-color: var(--button-blue-defolt-color);
-  border: 1px solid #82B3D3;
-  border-radius: 4px;
+.pagination-item {
   width: 60px;
   height: 60px;
+  border: 1px solid var(--button-blue-defolt-color);
+  background-color: var(--button-blue-defolt-color);
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.pagination-links{
+  text-decoration: none;
+  color: var(--additional-text-color-white);
+  padding: 13px 20px;
+}
+
+.current-pagination-item{
+  border: none;
+  background-color: #F2F2F2;
+}
+
 .current-pagination-link{
   color: var(--basic-text-color-black);
-  background-color: #F2F2F2;
-  border: none;
 }
 
 .hotel-amount-label{
   margin: 20px 51px 17px 0;
-
 }
 
 .hotel-amount{
@@ -973,7 +997,6 @@ img {
 .footer-contacts-links{
   text-decoration: none;
   color: var(--basic-text-color-black);
-  display: block;
   padding: 18px 12px;
 }
 
