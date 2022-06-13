@@ -269,7 +269,7 @@ img {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  padding: 63px 0 90px 0;
+  padding: 63px 200px 90px 200px;
 }
 
 .main-title{
@@ -429,7 +429,7 @@ img {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 91px 0 93px 0;
+  padding: 91px 200px 93px 200px;
 }
 
 .hotel-modal-button{
@@ -475,7 +475,7 @@ img {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  padding: 50px 0 50px 0;
+  padding: 94px 200px;
 }
 
 .mailing-title{
@@ -538,7 +538,7 @@ img {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 94px 200px;
 }
 
 .mailing-inner-title{
@@ -727,7 +727,7 @@ img {
   font-family: inherit;
   line-height: 21px;
   color: var(--additional-text-color-charcoal);
-  width: 290px;
+  min-width: 290px;
   height: 49px;
   padding: 12px 0 12px 20px;
   border: 2px solid #E5E5E5;
@@ -739,6 +739,7 @@ img {
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
   gap: 8px;
 }
@@ -909,6 +910,7 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   min-width: 400px;
   margin-right: 270px;
@@ -945,11 +947,11 @@ img {
 }
 
 .hotel-amount{
-  width: 160px;
+  min-width: 160px;
   height: 49px;
   padding: 14px 0 14px 20px;
   margin: 6px 0 6px auto;
-  align-self: stretch;
+  align-self: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
