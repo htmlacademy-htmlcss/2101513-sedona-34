@@ -944,6 +944,7 @@ img {
 
 .hotel-amount-label{
   margin: 20px 51px 17px 0;
+  min-width: 175px;
 }
 
 .hotel-amount{
