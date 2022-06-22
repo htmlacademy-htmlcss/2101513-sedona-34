@@ -192,13 +192,18 @@ img {
   padding: 20px 0 20px 0;
 }
 
+.header-link:hover{
+  background-color: var(--button-brown-defolt-color);
+  color: var(--additional-text-color-white);
+}
+
 .current-header-link{
   position: relative;
 }
 
 .current-header-link::before{
   content: '';
-  background-color: var(--button-brown-active-color);
+  background-color: #756257;
   height: 2px;
   bottom: -1px;
   left: 0;
@@ -591,7 +596,7 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  padding: 20px 491px 19px 22px;
+  padding: 20px 22px 19px;
 }
 
 .email-form-container{
@@ -666,15 +671,30 @@ img {
   margin: 0;
 }
 
-.breadcrumbs-list{
+.breadcrumbs-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 10px;
   gap: 25px;
+  /* gap: 10px; */
 }
+/*
+.hotels-link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} */
+
+.breadcrumbs-item:last-child{
+  position: relative;
+  padding: 0 0 0 10px;
+}
+
+
 
 .breadcrumbs-links{
   font-size: 16px;
@@ -696,6 +716,9 @@ img {
   background-image: url(../images/icon/arrow-icon.svg);
   width: 5px;
   height: 8px;
+  position: absolute;
+  left: -10px;
+  top: 7px;
 }
 
 .hotel-filter-form{
@@ -775,6 +798,17 @@ img {
   color: var(--additional-text-color-white);
   background-color: var(--button-blue-defolt-color);
   border: none;
+  cursor: pointer;
+}
+
+.hotel-filter-submit:hover,
+.hotel-filter-submit:focus{
+  background-color: var(--button-blue-hover-color);
+}
+
+.hotel-filter-submit:active{
+  background-color: var(--button-blue-defolt-color);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-filter-reset{
@@ -783,11 +817,14 @@ img {
   width: 65px;
   height: 20px;
   border: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   color: var(--additional-text-color-white);
+  cursor: pointer;
 }
 
-
+.hotel-filter-reset:hover{
+  color: rgba(255, 255, 255, 0.3);
+}
 
 /* Catalog Filter Results */
 /* Catalog filter Header */
@@ -822,6 +859,15 @@ img {
   border-radius: 4px;
 }
 
+.filter-results-select:hover,
+.filter-results-select:focus{
+  border-color: var(--button-blue-hover-color);
+}
+
+.filter-results-select:active{
+  border-color: #3F5E72;
+}
+
 .filter-results-view{
   margin: 0;
   padding: 0;
@@ -838,8 +884,6 @@ img {
   justify-content: center;
   width: 48px;
   height: 48px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
 }
 
 .view-links{
@@ -847,6 +891,25 @@ img {
   align-items: center;
   justify-content: center;
   padding: 14px 12px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.current-view-link{
+  border: 2px solid var(--basic-text-color-black);
+  border-radius: 4px;
+}
+
+.view-links:hover{
+  border-color: var(--basic-text-color-black);
+}
+
+.view-links:focus{
+  border-color: var(--button-blue-focus-color);
+}
+
+.view-links:active{
+  border-color: var(--basic-text-color-black);
 }
 
 .view-links-plate::before{
@@ -911,6 +974,8 @@ img {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  text-decoration: none;
+  color: var(--basic-text-color-black);
   margin: 0;
   grid-column: 1 / -1;
   grid-row: 2 / 3;
@@ -944,6 +1009,17 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-link-detail:hover,
+.card-link-detail:focus{
+  background-color: var(--button-brown-hover-color);
+}
+
+.card-link-detail:active{
+  background-color: var(--button-brown-defolt-color);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-favourite{
@@ -957,6 +1033,17 @@ img {
   grid-column: 2 / -1;
   grid-row: 4 / 5;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-favourite:hover,
+.button-favourite:focus{
+  background-color: var(--button-blue-focus-color);
+}
+
+.button-favourite:active{
+  background-color: var(--button-blue-defolt-color);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .card-raiting{
@@ -972,6 +1059,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  cursor: default;
 }
 
 .current-button-favourite{
@@ -983,6 +1071,17 @@ img {
   color: var(--additional-text-color-white);
   background-color: var(--button-green-defolt-color);
 }
+
+.current-button-favourite:hover,
+.current-button-favourite:focus{
+  background-color: var(--button-green-hover-color);
+}
+
+.current-button-favourite:active{
+  background-color: var(--button-green-defolt-color);
+  color:rgba(255, 255, 255, 0.3);
+}
+
 
 /* Pagination */
 
@@ -1007,26 +1106,41 @@ img {
 .pagination-item {
   width: 60px;
   height: 60px;
-  border: 1px solid var(--button-blue-defolt-color);
-  background-color: var(--button-blue-defolt-color);
-  border-radius: 4px;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .pagination-links{
   text-decoration: none;
   color: var(--additional-text-color-white);
-  padding: 13px 20px;
+  border: 1px solid var(--button-blue-defolt-color);
+  background-color: var(--button-blue-defolt-color);
+  border-radius: 4px;
+  padding: 12px 23px;
+  display: flex;
+  align-items: center;
 }
 
-.current-pagination-item{
-  border: none;
-  background-color: #F2F2F2;
+.pagination-links:hover:not(.current-pagination-link),
+.pagination-links:focus:not(.current-pagination-link){
+  background-color: var(--button-blue-hover-color);
+}
+
+.pagination-links:active:not(.current-pagination-link){
+  background-color: var(--button-blue-defolt-color);
+  color:rgba(255, 255, 255, 0.3)
+}
+
+.pagination-item:nth-child(5) .pagination-links{
+  padding: 12px 21px;
+}
+
+.pagination-item:nth-child(6) .pagination-links{
+  padding: 12px 18px;
 }
 
 .current-pagination-link{
+  border: none;
+  background-color: #F2F2F2;
   color: var(--basic-text-color-black);
 }
 
@@ -1043,6 +1157,16 @@ img {
   align-self: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+}
+
+
+.hotel-amount:hover,
+.hotel-amount:focus{
+  border-color: var(--button-blue-hover-color);
+}
+
+.hotel-amount:active{
+  border-color: #3F5E72;
 }
 
 
@@ -1089,6 +1213,10 @@ img {
   text-decoration: none;
   color: var(--basic-text-color-black);
   padding: 13px 10px;
+}
+
+.footer-contacts-item:nth-child(2) a{
+  padding: 13px 13px;
 }
 
 .footer-link-icons{
