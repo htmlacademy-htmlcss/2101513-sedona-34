@@ -954,6 +954,7 @@ img {
 .results-card-layout{
   width: 1056px;
   margin: 0 auto;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .results-cards{
@@ -963,7 +964,7 @@ img {
   display: flex;
   flex-flow: row wrap;
   gap: 18px;
-  margin-bottom: 96px;
+  margin-bottom: 66px;
 }
 
 .card{
@@ -1105,6 +1106,7 @@ img {
 .pagination-layout{
   width: 1056px;
   margin: 0 auto;
+  margin-top: 30px;
   display: flex;
   align-items: center;
 }
