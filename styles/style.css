@@ -674,7 +674,6 @@ img {
   flex-wrap: wrap;
   align-items: center;
   padding-top: 10px;
-  gap: 25px;
   gap: 10px;
 }
 
@@ -683,6 +682,7 @@ img {
   line-height: 21px;
   text-decoration: none;
   color: inherit;
+  display: flex;
 }
 
 .breadcrumbs-links:hover{
@@ -845,6 +845,7 @@ img {
   font-family: inherit;
   line-height: 21px;
   color: var(--additional-text-color-charcoal);
+  background-color: transparent;
 
   min-width: 290px;
   padding: 14px 40px 14px 20px;
@@ -1173,6 +1174,7 @@ img {
 
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  background-color: transparent;
 
   outline: none;
   appearance: none;
