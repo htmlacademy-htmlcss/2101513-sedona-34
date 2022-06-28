@@ -86,13 +86,13 @@ body{
   line-height: 26px;
   color: var(--basic-text-color-black);
   background-color: #fff;
-  margin: 0;
   padding: 0;
   width: 1200px;
   min-height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 button,
@@ -132,10 +132,11 @@ img {
   text-transform: capitalize;
   width: 1200px;
   min-height: 65px;
+  position: relative;
 }
 
 .main-header-logo{
-  margin-left: 70px;
+  left: 70px;
   position: absolute;
 }
 
@@ -155,8 +156,8 @@ img {
 .header-list{
   list-style-type: none;
   margin: 0;
+  padding: 0;
   margin-left: 169px;
-  padding-left: 17px;
   min-width: 390px;
   max-width: 550px;
   display: flex;
@@ -990,7 +991,7 @@ img {
 .cards-title{
   font-size: 24px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.4;
   text-decoration: none;
   color: var(--basic-text-color-black);
   margin: 0;
@@ -1032,6 +1033,7 @@ img {
 .card-link-detail:hover,
 .card-link-detail:focus{
   background-color: var(--button-brown-hover-color);
+  outline: none;
 }
 
 .card-link-detail:active{
