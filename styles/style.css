@@ -579,6 +579,11 @@ img {
 .mailing-button:active span{
   color: rgba(255, 255, 255, 0.3);
 }
+.mailing-button:disabled{
+  color: #ffffff;
+  background-color: #E5E5E5;
+}
+
 
 .input-email{
   padding: 0;
@@ -1244,15 +1249,15 @@ img {
 }
 
 .footer-link-icons{
-  fill: #83B3D3;
+  color: #83B3D3;
 }
 
-.footer-link-icons:hover,
-.footer-link-icons:focus{
+.footer-contacts-links:hover svg,
+.footer-contacts-links:focus svg{
   fill: var(--button-blue-hover-color);
 }
 
-.footer-link-icons:active{
+.footer-contacts-links:active svg{
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -1286,14 +1291,17 @@ img {
 }
 
 .footer-contacts-htmlacademy{
-  fill: var(--basic-text-color-black);
+  color: var(--basic-text-color-black);
 }
 
-.footer-contacts-htmlacademy:hover,
-.footer-contacts-htmlacademy:focus{
-  fill: var(--button-brown-defolt-color);
+.footer-contacts-logo:hover svg{
+  color: var(--button-brown-defolt-color);
 }
 
-.footer-contacts-htmlacademy:active{
-  fill: rgba(117, 97, 87, 0.3);
+.footer-contacts-logo:focus svg{
+  color: var(--button-brown-defolt-color);
+}
+
+.footer-contacts-logo:active svg{
+  color: rgba(117, 97, 87, 0.3);
 }
