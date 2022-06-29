@@ -261,13 +261,16 @@ img {
   line-height: 20px;
   text-transform: uppercase;
   color: var(--additional-text-color-white);
+
   background-color: var(--button-brown-defolt-color);
+  text-decoration: none;
+  text-align: center;
   border: none;
-  padding: 9px 15px 8px 15px;
   border-radius: 4px;
+
+  padding: 9px 15px 8px 15px;
   min-width: 160px;
   height: 37px;
-  cursor: pointer;
 }
 
 .header-button-modal:hover{
@@ -276,8 +279,12 @@ img {
 .header-button-modal:focus{
   background-color: var(--button-brown-focus-color);
 }
-.header-button-modal:active span{
+.header-button-modal:active{
   color: rgba(255, 255, 255, 0.3);
+}
+.header-button-modal:disabled{
+  background-color: #E5E5E5;
+  color:#ffffff;
 }
 
 /* Hero image */
@@ -494,14 +501,16 @@ img {
   cursor: pointer;
 }
 
-.hotel-modal-button:hover{
+.hotel-modal-button:hover,
+.hotel-modal-button:focus{
   background-color: var(--button-brown-hover-color);
 }
-.hotel-modal-button:focus{
-  background-color: var(--button-brown-focus-color);
-}
-.hotel-modal-button:active span{
+.hotel-modal-button:active{
   color: rgba(255, 255, 255, 0.3);
+}
+.hotel-modal-button:disabled{
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .modal-title{
@@ -570,18 +579,16 @@ img {
   cursor: pointer;
 }
 
-.mailing-button:hover{
+.mailing-button:hover,
+.mailing-button:focus{
   background-color: var(--button-blue-hover-color);
 }
-.mailing-button:focus{
-  background-color: var(--button-blue-focus-color);
-}
-.mailing-button:active span{
+.mailing-button:active{
   color: rgba(255, 255, 255, 0.3);
 }
 .mailing-button:disabled{
-  color: #ffffff;
   background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 
@@ -1294,10 +1301,7 @@ img {
   color: var(--basic-text-color-black);
 }
 
-.footer-contacts-logo:hover svg{
-  color: var(--button-brown-defolt-color);
-}
-
+.footer-contacts-logo:hover svg,
 .footer-contacts-logo:focus svg{
   color: var(--button-brown-defolt-color);
 }

@@ -39,7 +39,7 @@
           </a>
         </li>
         <li class="user-menu-item">
-          <button class="header-button-modal" type="submit"><span>Хочу сюда!</span></button>
+          <a href="#mailing" class="header-button-modal" type="submit">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -127,18 +127,16 @@
     <section class="hotel-modal">
       <h2 class="title modal-title">Заинтересовались?</h2>
       <p class="subtitle modal-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="hotel-modal-button" type="submit"><span>Поиск гостиницы в Седоне</span></button>
+      <button class="hotel-modal-button" type="button">Поиск гостиницы в Седоне</button>
     </section>
     <!-- Раздел с подпиской на рассылку -->
-    <section class="mailing">
+    <section class="mailing" id="mailing">
       <h2 class="mailing-title">Подпишитесь на рассылку</h2>
       <p class="mailing-subtitle">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-      <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="email-form-container">
-          <label class="visually-hidden">Введите вашу электронную почту</label>
-          <input class="input-email" type="email" name="email" placeholder="Ваш e-mail" required>
-          <button class="mailing-button" type="submit"><span>Подписаться</span></button>
-        </p>
+      <form class="email-form-container" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="input-email">Введите вашу электронную почту</label>
+        <input class="input-email" type="email" name="email" id="input-email" placeholder="Ваш e-mail" required>
+        <button class="mailing-button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
