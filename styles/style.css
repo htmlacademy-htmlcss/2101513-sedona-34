@@ -811,10 +811,13 @@ img {
 .hotel-filter-submit:focus {
   background-color: var(--button-blue-hover-color);
 }
-
 .hotel-filter-submit:active {
   background-color: var(--button-blue-defolt-color);
   color: rgba(255, 255, 255, 0.3);
+}
+.hotel-filter-submit:disabled{
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .hotel-filter-reset {
@@ -833,14 +836,19 @@ img {
 .hotel-filter-reset:hover {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .hotel-filter-reset:focus {
   color: var(--additional-text-color-white);
   border-color: var(--button-blue-active-color);
 }
-
+.hotel-filter-reset:focus-visible{
+  outline: none;
+}
 .hotel-filter-reset:active {
   color: rgba(255, 255, 255, 0.3);
+}
+.hotel-filter-reset:disabled{
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* Catalog Filter Results */
@@ -903,9 +911,12 @@ img {
 .filter-results-select:focus {
   border-color: var(--button-blue-hover-color);
 }
-
 .filter-results-select:active {
   border-color: #3F5E72;
+}
+.filter-results-select:disabled{
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .filter-results-view {
@@ -943,11 +954,12 @@ img {
 .view-links:hover {
   border-color: var(--basic-text-color-black);
 }
-
 .view-links:focus {
   border-color: var(--button-blue-focus-color);
 }
-
+.view-links:focus-visible {
+  outline: none;
+}
 .view-links:active {
   border-color: var(--basic-text-color-black);
 }
@@ -1058,10 +1070,13 @@ img {
   background-color: var(--button-brown-hover-color);
   outline: none;
 }
-
 .card-link-detail:active {
   background-color: var(--button-brown-defolt-color);
   color: rgba(255, 255, 255, 0.3);
+}
+.card-link-detail:disabled{
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .button-favourite {
@@ -1082,10 +1097,13 @@ img {
 .button-favourite:focus {
   background-color: var(--button-blue-focus-color);
 }
-
 .button-favourite:active {
   background-color: var(--button-blue-defolt-color);
   color: rgba(255, 255, 255, 0.3);
+}
+.button-favourite:disabled{
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .card-raiting {
@@ -1103,6 +1121,14 @@ img {
   border-radius: 4px;
   cursor: default;
   position: relative;
+}
+
+.card-raiting-star{
+  color: var(--button-blue-active-color);
+  grid-column: 1 / 2;
+  grid-row: 5 / -1;
+  align-self: center;
+  gap: 6px;
 }
 
 .current-button-favourite {
@@ -1168,7 +1194,6 @@ img {
 .pagination-links:focus:not(.current-pagination-link) {
   background-color: var(--button-blue-hover-color);
 }
-
 .pagination-links:active:not(.current-pagination-link) {
   background-color: var(--button-blue-defolt-color);
   color: rgba(255, 255, 255, 0.3)
