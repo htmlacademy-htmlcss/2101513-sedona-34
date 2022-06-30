@@ -1694,26 +1694,28 @@ img {
   border-radius: 4px;
   width: 133px;
 }
-.label-kids{
+.tooltip-container{
   grid-column: 3 / 4;
   grid-row: 5 / 6;
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
+  margin: 0;
 
   align-self: center;
   justify-self: center;
   position: relative;
 }
-.tooltip{
+.button-tooltip{
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -30px;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 60px;
+  top: 1px;
 
   border-radius: 50%;
+  border: none;
+  padding: 0;
   background-color: var(--button-blue-defolt-color);
   cursor: pointer;
 
@@ -1721,11 +1723,43 @@ img {
   align-items: center;
   justify-content: center;
 }
-.tooltip::before{
+.button-tooltip::before{
   content: '';
   background: url(../images/icon/modal-info-icon.svg) no-repeat;
   height: 9px;
   width: 1px;
+}
+.tooltip-info{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: normal;
+  text-transform: none;
+  color: var(--additional-text-color-white);
+
+  background-color: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+
+  width: 256px;
+  display: block;
+  display: none;
+  padding: 15px 18px 18px 22px;
+
+  position: absolute;
+  top: 40px;
+  left: -55px;
+}
+.tooltip-info::before{
+  content: '';
+  background: url(../images/icon/tolltip-triangle.svg) no-repeat;
+  width: 19px;
+  height: 9px;
+
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .amount-kids-container{
   grid-column: 4 / 5;
@@ -1825,6 +1859,11 @@ img {
 
 .tooltip:hover{
   background-color: var(--button-blue-focus-color);
+}
+
+.button-tooltip:hover + .tooltip-info,
+.button-tooltip:focus + .tooltip-info{
+  display: block;
 }
 
 /* Inputs */
