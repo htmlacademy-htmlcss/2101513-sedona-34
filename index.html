@@ -194,7 +194,8 @@
       </address>
     </div>
   </footer>
-  <div class="modal-search visually-hidden">
+  <!-- .modal-open - для открытия модального окна -->
+  <div class="modal-search">
     <section class="modal-container">
       <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
       <button class="modal-button-close" type="button">
@@ -240,11 +241,10 @@
           </div>
 
           <label class="label-kids" for="kids">Дети:</label>
-          <!-- <p class="tooltip-container">
-              <button class="button-tooltip" type="button" aria-labelledby="tooltip-label"></button>
-              <span class="tooltip-info" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-          </p> -->
           <div class="amount-kids-container">
+            <button class="button-tooltip" type="button" aria-labelledby="tooltip-label">
+              <span class="tooltip-info" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </button>
             <button class="amount-remove" type="button">
               <span class="visually-hidden">Добавить</span>
               <svg width="13" height="1" viewBox="0 0 13 1" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
