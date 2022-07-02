@@ -194,7 +194,7 @@
       </address>
     </div>
   </footer>
-  <div class="modal-search">
+  <div class="modal-search visually-hidden">
     <section class="modal-container">
       <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
       <button class="modal-button-close" type="button">
@@ -224,38 +224,40 @@
 
           <label class="label-adults" for="adults">Взрослые:</label>
           <div class="amount-adults-container">
-            <span class="amount-remove">
+            <button class="amount-remove" type="button">
+              <span class="visually-hidden">Добавить</span>
               <svg width="13" height="1" viewBox="0 0 13 1" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0L0 1L13 1V0L0 0Z" />
               </svg>
-            </span>
+            </button>
             <input class="amount-adults" type="number" name="amount-adults" id="adults" value="2">
-            <span class="amount-add">
+            <button class="amount-add" type="button">
+              <span class="visually-hidden">Убавить</span>
               <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
               </svg>
-            </span>
+            </button>
           </div>
 
-          <p class="tooltip-container">
-            <label for="kids">Дети:</label>
-            <span>
+          <label class="label-kids" for="kids">Дети:</label>
+          <!-- <p class="tooltip-container">
               <button class="button-tooltip" type="button" aria-labelledby="tooltip-label"></button>
               <span class="tooltip-info" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-            </span>
-          </p>
+          </p> -->
           <div class="amount-kids-container">
-            <span class="amount-remove">
+            <button class="amount-remove" type="button">
+              <span class="visually-hidden">Добавить</span>
               <svg width="13" height="1" viewBox="0 0 13 1" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0L0 1L13 1V0L0 0Z" />
               </svg>
-            </span>
+            </button>
             <input class="amount-kids" type="number" name="amount-kids" id="kids" value="1">
-            <span class="amount-add">
+            <button class="amount-add" type="button">
+              <span class="visually-hidden">Убавить</span>
               <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
               </svg>
-            </span>
+            </button>
           </div>
           <button class="modal-button-submit" type="submit">Найти</button>
         </form>
