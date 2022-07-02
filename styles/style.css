@@ -245,13 +245,21 @@ img {
 
 .favourite-icon {
   font-size: 10px;
+  font-weight: 400;
   line-height: 13px;
-  padding: 5px 6px;
-  border-radius: 50%;
+  letter-spacing: -0.1em;
   color: var(--additional-text-color-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
   background-color: var(--button-green-defolt-color);
+
   position: absolute;
-  top: 16px;
+  top: 15px;
   left: 24px;
 }
 
