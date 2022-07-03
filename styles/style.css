@@ -1458,10 +1458,12 @@ img {
 .hotel-amount-label {
   margin: 20px 51px 17px 0;
   min-width: 175px;
+  max-width: 250px;
 }
 
 .hotel-amount {
   min-width: 160px;
+  max-width: 675px;
   min-height: 49px;
   padding: 14px 40px 14px 20px;
   align-self: center;
@@ -1487,15 +1489,12 @@ img {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-
-
 .hotel-amount,
 .hotel-amount-label {
   font-size: 18px;
   line-height: 21px;
   color: var(--additional-text-color-charcoal);
 }
-
 
 /* Footer Section */
 
