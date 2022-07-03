@@ -152,6 +152,7 @@ img {
 
 .header-item {
   margin-right: 34px;
+  max-width: 220px;
 }
 
 .user-menu {
@@ -235,6 +236,7 @@ img {
   line-height: 13px;
   letter-spacing: -0.1em;
   color: var(--additional-text-color-white);
+  overflow: hidden;
 
   display: flex;
   align-items: center;
@@ -1508,6 +1510,7 @@ img {
   margin: 40px auto 30px auto;
   width: 1060px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -1516,9 +1519,10 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   min-width: 140px;
   align-self: stretch;
-  margin-right: 195px;
+  margin-right: 40px;
 }
 
 .footer-contacts-item {
@@ -1554,16 +1558,18 @@ img {
 .footer-contacts-author {
   font-style: normal;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 40px;
 }
 
 .footer-contacts-phone {
   font-size: 40px;
   min-width: 332px;
+  max-width: 700px;
   line-height: 38px;
   text-decoration: none;
   padding: 5px 0;
-  margin-right: 234px;
+  justify-self: center;
   color: var(--basic-text-color-black);
 }
 
