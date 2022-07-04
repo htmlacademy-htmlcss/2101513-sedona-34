@@ -106,6 +106,9 @@ img {
 .main-page {
   flex-grow: 1;
 }
+.main-hotel-page{
+  flex-grow: 1;
+}
 
 .main-header {
   font-size: 20px;
@@ -187,7 +190,7 @@ img {
   content: '';
   background-color: #756257;
   height: 2px;
-  bottom: -1px;
+  bottom: 0;
   left: 0;
   right: 0;
   position: absolute;
@@ -278,7 +281,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
 
-  padding: 9px 15px 8px 15px;
+  padding: 8px 14px 8px 15px;
   min-width: 160px;
   min-height: 37px;
 }
@@ -305,7 +308,7 @@ img {
 .hero-wrapper {
   min-height: 485px;
   padding: 51px 82px 82px;
-  margin-top: -1px;
+  margin-top: -2px;
 
   background: #000 url(../images/img/background-main.jpg) no-repeat;
   background-size: cover;
@@ -511,6 +514,7 @@ img {
   flex-flow: column nowrap;
   align-items: center;
   padding: 91px 200px 93px 200px;
+  margin-top: 1px;
 }
 
 .hotel-modal-button {
@@ -672,7 +676,7 @@ img {
 .mailing-inner-title {
   font-size: 30px;
   font-weight: 700;
-  line-height: 39px;
+  line-height: 36px;
   text-transform: uppercase;
   text-align: center;
   color: var(--basic-text-color-black);
@@ -697,13 +701,14 @@ img {
 .hotel-filter {
   background: #000 url(../images/img/background-filter.jpg) no-repeat;
   background-size: cover;
-  ;
   font-size: 18px;
   line-height: 21px;
   color: var(--additional-text-color-white);
   width: 1200px;
   padding: 35px 70px 55px 70px;
   margin-bottom: 55px;
+  position: relative;
+  margin-top: -2px;
 }
 
 .hotel-filter-layout {
@@ -720,7 +725,7 @@ img {
 .hotel-filter-title {
   font-size: 60px;
   font-weight: 700;
-  line-height: 75px;
+  line-height: 79px;
   margin: 0;
 }
 
@@ -731,7 +736,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 8px;
   gap: 26px;
 }
 
@@ -1125,6 +1130,7 @@ input[type='number'] {
 }
 
 .select-wrapper {
+  display: flex;
   position: relative;
 }
 
@@ -1132,8 +1138,8 @@ input[type='number'] {
   content: '';
 
   position: absolute;
-  top: 21px;
-  right: 20px;
+  top: 24px;
+  right: 19px;
 
   width: 12px;
   height: 8px;
@@ -1266,7 +1272,7 @@ input[type='number'] {
 .cards-title {
   font-size: 24px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
   text-decoration: none;
   color: var(--basic-text-color-black);
   margin: 0;
@@ -1406,10 +1412,11 @@ input[type='number'] {
 .pagination-layout {
   width: 1056px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 27px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
 .pagination-list {
@@ -1421,7 +1428,7 @@ input[type='number'] {
   gap: 8px;
   min-width: 400px;
   min-height: 61px;
-  margin-right: 270px;
+  font-size: 20px;
 }
 
 .pagination-item {
@@ -1437,9 +1444,22 @@ input[type='number'] {
   border: 1px solid var(--button-blue-defolt-color);
   background-color: var(--button-blue-defolt-color);
   border-radius: 4px;
-  padding: 12px 23px;
+  padding: 12px 24px;
   display: flex;
   align-items: center;
+}
+
+.pagination-item:nth-child(1) .pagination-links {
+  padding: 12px 25px;
+}
+.pagination-item:nth-child(4) .pagination-links {
+  padding: 12px 23px;
+}
+.pagination-item:nth-child(5) .pagination-links {
+  padding: 12px 20px;
+}
+.pagination-item:nth-child(6) .pagination-links {
+  padding: 12px 17px;
 }
 
 .pagination-links:hover:not(.current-pagination-link),
@@ -1451,14 +1471,6 @@ input[type='number'] {
   color: rgba(255, 255, 255, 0.3)
 }
 
-.pagination-item:nth-child(5) .pagination-links {
-  padding: 12px 21px;
-}
-
-.pagination-item:nth-child(6) .pagination-links {
-  padding: 12px 18px;
-}
-
 .current-pagination-link {
   border: none;
   background-color: #F2F2F2;
@@ -1466,7 +1478,7 @@ input[type='number'] {
 }
 
 .hotel-amount-label {
-  margin: 20px 48px 17px 0;
+  margin: 18px 49px 17px 0;
   min-width: 175px;
   max-width: 250px;
 }
@@ -1475,7 +1487,7 @@ input[type='number'] {
   min-width: 160px;
   max-width: 675px;
   min-height: 49px;
-  padding: 13px 40px 10px 20px;
+  padding: 13px 40px 10px 19px;
   align-self: center;
 
   border: 2px solid #E5E5E5;
@@ -1574,7 +1586,7 @@ input[type='number'] {
 
   grid-column: 2 / 3;
 
-  padding: 5px 0;
+  padding: 7px 0;
 }
 
 .footer-contacts-phone:hover,
@@ -1590,7 +1602,7 @@ input[type='number'] {
 }
 
 .footer-contacts-logo {
-  padding: 8px 0;
+  padding: 10px 0;
 
   display: flex;
   align-self: center;
@@ -1658,6 +1670,7 @@ input[type='number'] {
   font-weight: 700;
   text-transform: capitalize;
   align-self: center;
+  padding-top: 5px;
 }
 .input-in-container{
   grid-column: 2 / -1;
@@ -1674,8 +1687,7 @@ input[type='number'] {
 }
 .input-calendar-in{
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 21px;
   right: 20px;
 
   border: none;
@@ -1699,6 +1711,7 @@ input[type='number'] {
   font-weight: 700;
   text-transform: capitalize;
   align-self: center;
+  padding-top: 4px;
 }
 .input-out-container{
   grid-column: 2 / -1;
@@ -1715,8 +1728,7 @@ input[type='number'] {
 }
 .input-calendar-out{
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 21px;
   right: 20px;
 
   border: none;
@@ -1740,7 +1752,6 @@ input[type='number'] {
   font-weight: 700;
   text-transform: capitalize;
   align-self: center;
-  padding: 10px;
 }
 .amount-adults-container{
   grid-column: 2 / 3;
@@ -1750,9 +1761,8 @@ input[type='number'] {
 }
 .amount-remove{
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 20px;
+  top: 13px;
+  left: 13px;
 
   width: 25px;
   height: 25px;
@@ -1768,9 +1778,8 @@ input[type='number'] {
 }
 .amount-add{
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 20px;
+  top: 13px;
+  right: 13px;
 
   width: 25px;
   height: 25px;
@@ -1790,7 +1799,6 @@ input[type='number'] {
   border-radius: 4px;
   width: 100%;
   appearance: textfield;
-  appearance: -moz-;
 }
 .label-kids{
   grid-column: 3 / 4;
@@ -1799,7 +1807,7 @@ input[type='number'] {
   text-transform: capitalize;
   align-self: center;
   justify-self: center;
-  padding: 10px;
+  padding-left: 6px;
 }
 .tooltip-container{
   grid-column: 3 / 4;
@@ -1816,8 +1824,8 @@ input[type='number'] {
   position: absolute;
   width: 25px;
   height: 25px;
-  left: -43px;
-  top: 14px;
+  left: -45px;
+  top: 15px;
 
   border-radius: 50%;
   border: none;
@@ -1941,6 +1949,8 @@ input[type='number'] {
 
 .modal-title {
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 61px;
 }
 
 .amount-remove svg,
