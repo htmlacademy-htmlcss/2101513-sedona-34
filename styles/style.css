@@ -644,7 +644,7 @@ img {
 }
 .input-email:hover,
 .input-email:focus {
-  border-color: var(--button-blue-hover-color); */
+  border-color: var(--button-blue-hover-color);
 }
 .input-email:disabled{
   border: 2px solid rgba(0, 0, 0, 0.3);
